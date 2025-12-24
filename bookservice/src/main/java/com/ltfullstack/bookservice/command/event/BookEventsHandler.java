@@ -39,8 +39,6 @@ public class BookEventsHandler {
     public void on(BookDeleteEvent event) {
         Optional<Book> oldBook = bookRepository.findById(event.getId());
 
-        if (oldBook.isPresent()) {
-            bookRepository.delete(oldBook.get());
-        }
+        oldBook.ifPresent(book -> bookRepository.delete(book));
     }
 }
