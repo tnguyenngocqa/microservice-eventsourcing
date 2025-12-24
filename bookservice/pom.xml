@@ -82,6 +82,12 @@
             <artifactId>guava</artifactId>
             <version>33.5.0-jre</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.ltfullstack</groupId>
+            <artifactId>commonservice</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
